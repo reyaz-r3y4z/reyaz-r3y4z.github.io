@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mohammad Reyaz Mohammad Rafi | Portfolio</title>
+  <meta name="description" content="Portfolio of Mohammad Reyaz — Data Science & ML projects." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <nav class="nav">
+        <div class="logo">Mohammad Reyaz</div>
+        <div class="links">
+          <a href="#projects">Projects</a>
+          <a href="#skills">Skills</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </nav>
+
+      <div class="hero">
+        <h1>Data Science & ML Portfolio</h1>
+        <p>
+          I build end-to-end machine learning projects — from data + modeling to evaluation and deployment-ready code.
+        </p>
+
+        <div class="cta">
+          <a class="btn primary" href="#projects">View Projects</a>
+          <a class="btn" href="https://www.linkedin.com" target="_blank" rel="noopener">LinkedIn</a>
+          <a class="btn" href="https://github.com" target="_blank" rel="noopener">GitHub</a>
+        </div>
+
+        <div class="mini">
+          <span>📍 Melbourne, Australia</span>
+          <span>•</span>
+          <span>Master of Data Science (RMIT)</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="projects" class="section">
+      <div class="container">
+        <h2>Projects</h2>
+        <p class="sub">
+          A few projects I’m proud of. Each includes code, approach, and results.
+        </p>
+
+        <div class="grid">
+          <article class="card">
+            <h3>Basketball Player & Ball Tracking (CV)</h3>
+            <p>
+              Player detection + tracking pipeline using YOLO + tracking (BoT-SORT/ByteTrack) with performance metrics.
+            </p>
+            <div class="tags">
+              <span>YOLO</span><span>OpenCV</span><span>Tracking</span><span>AWS</span>
+            </div>
+            <div class="cardlinks">
+              <a href="https://github.com/yourusername/project1" target="_blank" rel="noopener">Code</a>
+              <a href="#" target="_blank" rel="noopener">Demo</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <h3>Time-Series Forecasting</h3>
+            <p>
+              Forecasting model with feature engineering (lags, rolling stats) + evaluation across horizons.
+            </p>
+            <div class="tags">
+              <span>Python</span><span>Pandas</span><span>ML</span><span>Forecasting</span>
+            </div>
+            <div class="cardlinks">
+              <a href="https://github.com/yourusername/project2" target="_blank" rel="noopener">Code</a>
+              <a href="#" target="_blank" rel="noopener">Report</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <h3>NLP Sentiment / Classification</h3>
+            <p>
+              Text preprocessing + baseline and deep models with clear error analysis and improvements.
+            </p>
+            <div class="tags">
+              <span>NLP</span><span>PyTorch</span><span>Transformers</span><span>EDA</span>
+            </div>
+            <div class="cardlinks">
+              <a href="https://github.com/yourusername/project3" target="_blank" rel="noopener">Code</a>
+              <a href="#" target="_blank" rel="noopener">Write-up</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section alt">
+      <div class="container">
+        <h2>Skills</h2>
+        <div class="two">
+          <div class="panel">
+            <h3>Core</h3>
+            <ul>
+              <li>Python, SQL, Git</li>
+              <li>Data cleaning, EDA, feature engineering</li>
+              <li>Model evaluation + metrics</li>
+            </ul>
+          </div>
+          <div class="panel">
+            <h3>ML / Tools</h3>
+            <ul>
+              <li>PyTorch, TensorFlow (basics)</li>
+              <li>OpenCV, YOLO, tracking</li>
+              <li>AWS (EC2, S3, Lambda)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container">
+        <h2>About</h2>
+        <p>
+          I’m a Master of Data Science student at RMIT. I enjoy building practical ML systems and presenting results clearly.
+          I’m currently looking for roles in Data Science / ML Engineering / Computer Vision.
+        </p>
+      </div>
+    </section>
+
+    <section id="contact" class="section alt">
+      <div class="container">
+        <h2>Contact</h2>
+        <p class="sub">Want to chat about an opportunity or a project?</p>
+        <div class="contact">
+          <a class="btn primary" href="mailto:reyazrmr@example.com">Email me</a>
+          <a class="btn" href="https://www.linkedin.com/in/mdreyaz7755" target="_blank" rel="noopener">LinkedIn</a>
+          <a class="btn" href="https://github.com/yourusername" target="_blank" rel="noopener">GitHub</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <small>© <span id="year"></span> Mohammad Reyaz — Built with GitHub Pages</small>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
