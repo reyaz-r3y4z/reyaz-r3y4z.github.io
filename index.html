@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Mohammad Reyaz Mohammad Rafi | Portfolio</title>
-  <meta name="description" content="Portfolio of Mohammad Reyaz — Data Science & ML projects." />
+  <meta name="description" content="Portfolio of Mohammad Reyaz — Data Science, Machine Learning, Computer Vision projects." />
   <link rel="stylesheet" href="style.css" />
 </head>
 
@@ -15,6 +15,7 @@
         <div class="logo">Mohammad Reyaz</div>
         <div class="links">
           <a href="#projects">Projects</a>
+          <a href="#visuals">Visuals</a>
           <a href="#skills">Skills</a>
           <a href="#about">About</a>
           <a href="#contact">Contact</a>
@@ -22,81 +23,217 @@
       </nav>
 
       <div class="hero">
-        <h1>Data Science & ML Portfolio</h1>
-        <p>
-          Computer Vision Engineer | NLP Engineer | Data Scientist | Machine Learning| I Build Machines That See, Learn, and Understand the World
-          I build end-to-end machine learning projects — from data + modeling to evaluation and deployment-ready code.
-        </p>
+        <div class="hero-left">
+          <h1>Data Science • ML • Computer Vision</h1>
+          <p>
+            I transform raw data (and raw videos) into measurable insights using machine learning — from model building
+            to evaluation and deployment-ready code.
+            <!-- Data Scientist who transforms complex challenges into elegant solutions.
+            Proven ability to lead cross-functional teams and deliver production-ready AI systems. 
+            Combines deep technical expertise in machine learning, computer vision, and big data with pragmatic problem-solving identifying multiple pathways and implementing the most efficient approach. 
+            Specialized in building scalable models that drive measurable business impact, from real-time sports analytics to biomedical AI.  -->
+            <!-- Thrives on cutting through complexity to deliver solutions that work in production, not just in theory. -->
+          </p>
 
-        <div class="cta">
-          <a class="btn primary" href="#projects">View Projects</a>
-          <a class="btn" href="https://www.linkedin.com" target="_blank" rel="noopener">LinkedIn</a>
-          <a class="btn" href="https://github.com" target="_blank" rel="noopener">GitHub</a>
+          <div class="cta">
+            <a class="btn primary" href="#projects">View Projects</a>
+            <a class="btn" href="https://www.linkedin.com/in/YOUR_LINKEDIN" target="_blank" rel="noopener">LinkedIn</a>
+            <a class="btn" href="https://github.com/YOUR_GITHUB" target="_blank" rel="noopener">GitHub</a>
+          </div>
+
+          <div class="mini">
+            <span>📍 Melbourne, Australia</span>
+            <span>•</span>
+            <span>Master of Data Science (RMIT)</span>
+          </div>
         </div>
 
-        <div class="mini">
-          <span>📍 Melbourne, Australia</span>
-          <span>•</span>
-          <span>Master of Data Science (RMIT)</span>
+        <div class="hero-right">
+          <img class="profile" src="assets/profile.jpg" alt="Profile photo of Mohammad Reyaz" />
+          <div class="hero-badges">
+            <span class="badge">Open to work</span>
+            <span class="badge">ML / CV</span>
+            <span class="badge">Python</span>
+          </div>
         </div>
       </div>
     </div>
   </header>
 
   <main>
+    <!-- PROJECTS -->
     <section id="projects" class="section">
       <div class="container">
         <h2>Projects</h2>
-        <p class="sub">
-          A few projects I’m proud of. Each includes code, approach, and results.
-        </p>
+        <p class="sub">My top projects with real outcomes, visuals, and code.</p>
 
         <div class="grid">
+          <!-- 1) Trainstop -->
           <article class="card">
-            <h3>Basketball Player & Ball Tracking (Open - CV)</h3>
+            <h3>Basketball Player & Ball Tracking (Internship – Trainstop)</h3>
             <p>
-              Player detection + tracking pipeline using YOLO + tracking (BoT-SORT/ByteTrack) with performance metrics.
+              Built an end-to-end computer vision pipeline that transforms raw basketball match footage into actionable
+              sports analytics. Detects players + ball, tracks identities across frames, and enables real-time insight generation.
             </p>
+
+            <ul class="insights">
+              <li>Video → detection → tracking → analytics pipeline</li>
+              <li>Foundation for real-time player statistics & action insights dashboard (Python full-stack in progress)</li>
+              <li>Delivered tracking outputs that support performance analytics and coaching insights</li>
+            </ul>
+
             <div class="tags">
-              <span>YOLO</span><span>OpenCV</span><span>Tracking</span><span>AWS</span>
+              <span>YOLO</span><span>OpenCV</span><span>Tracking</span><span>Python</span><span>AWS</span>
             </div>
+
             <div class="cardlinks">
-              <a href="https://github.com/yourusername/project1" target="_blank" rel="noopener">Code</a>
-              <a href="#" target="_blank" rel="noopener">Demo</a>
+              <a href="https://github.com/YOUR_GITHUB/trainstop-tracking" target="_blank" rel="noopener">Code</a>
+              <!-- Choose ONE demo option below:
+                   Option A (recommended): YouTube unlisted link
+                   Option B: GitHub Pages hosted mp4 (assets/trainstop/demo.mp4)
+                   Option C: link to gif (assets/trainstop/demo.gif)
+              -->
+              <a href="https://youtu.be/YOUR_DEMO_LINK" target="_blank" rel="noopener">Demo</a>
+              <a href="#demo" class="soft">Embedded Demo</a>
             </div>
           </article>
 
+          <!-- 2) WBC -->
           <article class="card">
-            <h3>Time-Series Forecasting</h3>
+            <h3>Biomedical Image Classification – White Blood Cell Recognition</h3>
             <p>
-              Forecasting model with feature engineering (lags, rolling stats) + evaluation across horizons.
+              Designed a multi-target CNN for WBC classification using transfer learning on limited biomedical datasets,
+              with interpretability via Grad-CAM to visualize critical activation regions.
             </p>
+
+            <ul class="insights">
+              <li>Transfer learning + multi-class classification on small dataset</li>
+              <li>Grad-CAM interpretability for model trust and explanation</li>
+              <li>Clear evaluation through confusion matrix and class-level performance</li>
+            </ul>
+
             <div class="tags">
-              <span>Python</span><span>Pandas</span><span>ML</span><span>Forecasting</span>
+              <span>TensorFlow</span><span>Keras</span><span>OpenCV</span><span>Scikit-learn</span><span>Grad-CAM</span>
             </div>
+
             <div class="cardlinks">
-              <a href="https://github.com/yourusername/project2" target="_blank" rel="noopener">Code</a>
+              <a href="https://github.com/YOUR_GITHUB/wbc-recognition" target="_blank" rel="noopener">Code</a>
+              <a href="assets/wbc/gradcam.png" target="_blank" rel="noopener">Grad-CAM</a>
+              <a href="assets/wbc/confusion_matrix.png" target="_blank" rel="noopener">Confusion Matrix</a>
+            </div>
+          </article>
+
+          <!-- 3) Visual Entailment -->
+          <article class="card">
+            <h3>Visual Entailment System (Multi-Modal AI)</h3>
+            <p>
+              Built a multi-modal entailment classifier combining EfficientNetB4 (image) + Universal Sentence Encoder (text)
+              to predict entailment relationships between images and captions using the SNLI-VE dataset.
+            </p>
+
+            <ul class="insights">
+              <li>Multi-phase training: frozen encoders → fine-tuning → threshold optimization</li>
+              <li>Image-text reasoning pipeline with strong baseline + improvements</li>
+              <li>Final evaluation and decision calibration for reliable predictions</li>
+            </ul>
+
+            <div class="tags">
+              <span>TensorFlow</span><span>Keras</span><span>EfficientNetB4</span><span>USE</span><span>Multi-Modal</span>
+            </div>
+
+            <div class="cardlinks">
+              <a href="https://github.com/YOUR_GITHUB/visual-entailment" target="_blank" rel="noopener">Code</a>
+              <a href="assets/ve/pipeline.png" target="_blank" rel="noopener">Architecture</a>
+            </div>
+          </article>
+
+          <!-- 4) Time series -->
+          <article class="card">
+            <h3>Time Series Forecasting & Analysis (Renewables + Bitcoin)</h3>
+            <p>
+              Completed time series projects focused on trend analysis, forecasting, and model selection using
+              statistical tools and ARIMA family models.
+            </p>
+
+            <ul class="insights">
+              <li>Renewable electricity forecasting (Australia): next 10-month outlook based on historical trends</li>
+              <li>Bitcoin index modeling using ACF/PACF/EACF + ARIMA selection</li>
+              <li>Model comparison using AIC, BIC, and MSE</li>
+            </ul>
+
+            <div class="tags">
+              <span>Time Series</span><span>ARIMA</span><span>Forecasting</span><span>Python</span><span>EDA</span>
+            </div>
+
+            <div class="cardlinks">
+              <a href="https://github.com/YOUR_GITHUB/time-series-projects" target="_blank" rel="noopener">Code</a>
               <a href="#" target="_blank" rel="noopener">Report</a>
-            </div>
-          </article>
-
-          <article class="card">
-            <h3>NLP Sentiment / Classification</h3>
-            <p>
-              Text preprocessing + baseline and deep models with clear error analysis and improvements.
-            </p>
-            <div class="tags">
-              <span>NLP</span><span>PyTorch</span><span>Transformers</span><span>EDA</span>
-            </div>
-            <div class="cardlinks">
-              <a href="https://github.com/yourusername/project3" target="_blank" rel="noopener">Code</a>
-              <a href="#" target="_blank" rel="noopener">Write-up</a>
             </div>
           </article>
         </div>
       </div>
     </section>
 
+    <!-- EMBEDDED DEMO SECTION -->
+    <section id="demo" class="section alt">
+      <div class="container">
+        <h2>Demo</h2>
+        <p class="sub">
+          You can embed your Trainstop demo directly here (recommended if the video is short).
+        </p>
+
+        <!-- OPTION 1: Embed YouTube (RECOMMENDED) -->
+        <div class="embed">
+          <iframe
+            src="https://www.youtube.com/embed/YOUR_YOUTUBE_VIDEO_ID"
+            title="Trainstop Demo"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+          </iframe>
+        </div>
+
+        <!-- OPTION 2: Host MP4 inside GitHub Pages (ONLY if video is small) -->
+        <!--
+        <video class="video" controls playsinline>
+          <source src="assets/trainstop/demo.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        -->
+
+        <!-- OPTION 3: Use a GIF preview -->
+        <!--
+        <img class="media" src="assets/trainstop/demo.gif" alt="Trainstop tracking demo GIF" />
+        -->
+      </div>
+    </section>
+
+    <!-- VISUALS GALLERY -->
+    <section id="visuals" class="section">
+      <div class="container">
+        <h2>Final Insights (Visuals)</h2>
+        <p class="sub">Key outputs that show results clearly.</p>
+
+        <div class="gallery">
+          <figure class="shot">
+            <img src="assets/wbc/gradcam.png" alt="Grad-CAM visualization for WBC project" />
+            <figcaption>WBC: Grad-CAM interpretability</figcaption>
+          </figure>
+
+          <figure class="shot">
+            <img src="assets/wbc/confusion_matrix.png" alt="Confusion matrix for WBC project" />
+            <figcaption>WBC: Confusion matrix</figcaption>
+          </figure>
+
+          <figure class="shot">
+            <img src="assets/ve/pipeline.png" alt="Visual Entailment pipeline diagram" />
+            <figcaption>Visual Entailment: model pipeline</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
     <section id="skills" class="section alt">
       <div class="container">
         <h2>Skills</h2>
@@ -106,14 +243,14 @@
             <ul>
               <li>Python, SQL, Git</li>
               <li>Data cleaning, EDA, feature engineering</li>
-              <li>Model evaluation + metrics</li>
+              <li>Model evaluation, metrics, reporting</li>
             </ul>
           </div>
           <div class="panel">
             <h3>ML / Tools</h3>
             <ul>
-              <li>PyTorch, TensorFlow (basics)</li>
-              <li>OpenCV, YOLO, tracking</li>
+              <li>TensorFlow / Keras, PyTorch (basics)</li>
+              <li>OpenCV, YOLO, tracking pipelines</li>
               <li>AWS (EC2, S3, Lambda)</li>
             </ul>
           </div>
@@ -121,24 +258,27 @@
       </div>
     </section>
 
+    <!-- ABOUT -->
     <section id="about" class="section">
       <div class="container">
         <h2>About</h2>
         <p>
-          I’m a Master of Data Science student at RMIT. I enjoy building practical ML systems and presenting results clearly.
-          I’m currently looking for roles in Data Science / ML Engineering / Computer Vision.
+          I’m a Master of Data Science student at RMIT University. I enjoy building practical ML systems — especially
+          computer vision and multi-modal AI — and turning outputs into clear, decision-ready insights. I’m currently
+          looking for opportunities in Data Science / ML Engineering / Computer Vision.
         </p>
       </div>
     </section>
 
+    <!-- CONTACT -->
     <section id="contact" class="section alt">
       <div class="container">
         <h2>Contact</h2>
-        <p class="sub">Want to chat about an opportunity or a project?</p>
+        <p class="sub">Want to talk about a role or a project?</p>
         <div class="contact">
-          <a class="btn primary" href="mailto:reyazrmr@example.com">Email me</a>
-          <a class="btn" href="https://www.linkedin.com/in/mdreyaz7755" target="_blank" rel="noopener">LinkedIn</a>
-          <a class="btn" href="https://github.com/yourusername" target="_blank" rel="noopener">GitHub</a>
+          <a class="btn primary" href="mailto:YOUR_EMAIL@example.com">Email me</a>
+          <a class="btn" href="https://www.linkedin.com/in/YOUR_LINKEDIN" target="_blank" rel="noopener">LinkedIn</a>
+          <a class="btn" href="https://github.com/YOUR_GITHUB" target="_blank" rel="noopener">GitHub</a>
         </div>
       </div>
     </section>
